@@ -1,0 +1,126 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0f0f0f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  background-color: #0f0f0f;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #0f0f0f;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0f0f;
+}
+
+a {
+  font-weight: 500;
+  color: #e50914;
+  text-decoration: none;
+}
+a:hover {
+  color: #f40612;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+button {
+  border-radius: 6px;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  background-color: #f40612;
+  transform: translateY(-1px);
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid #e50914;
+  outline-offset: 2px;
+}
+
+input {
+  border-radius: 6px;
+  border: 1px solid #333;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #e50914;
+  box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.2);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  input {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
